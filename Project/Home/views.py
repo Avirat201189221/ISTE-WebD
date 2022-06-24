@@ -28,7 +28,7 @@ def login(request):
 
 def logoutUser(request):
     logout(request)
-    return render(request,"login.html")
+    return redirect("/login")
 
 def facultyPage(request):
     return render(request,"facultyIndex.html")
