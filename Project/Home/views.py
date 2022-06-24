@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, logout
 # Create your views here.
 #test user is person1 with password: person1kapassword
+#test faculty is faculty1.faculty password: iamafacultyperson
+#test student is student1.student password: iamastudentperson
 def index(request):
     if (request.user.is_anonymous):
         return redirect("/login")
@@ -17,7 +19,10 @@ def login(request):
         user = authenticate(username=email, password=password)
         if user is not None:
             messages.success(request, 'Login complete')
-            return redirect("/")
+            if ".faculty" in email:
+                return redirect("/faculty")
+            elif ".student" in email:    
+                return redirect("/")
             
     return render(request,"login.html")
 
@@ -25,4 +30,5 @@ def logoutUser(request):
     logout(request)
     return render(request,"login.html")
 
-    
+def facultyPage(request):
+    return render(request,"facultyIndex.html")

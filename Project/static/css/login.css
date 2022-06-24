@@ -15,8 +15,8 @@ body {
   padding: 20px;
 }
 .page {
-  background: url("/static/images/thaparbackground.png") center no-repeat;
   display: flex;
+  background: url("/static/images/thaparbackground.jpg") center no-repeat;
   flex-direction: column;
   height: calc(100% - 40px);
   position: absolute;
