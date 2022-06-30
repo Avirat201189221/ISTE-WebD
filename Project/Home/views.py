@@ -32,3 +32,6 @@ def logoutUser(request):
 
 def facultyPage(request):
     return render(request,"facultyIndex.html")
+
+def profilePage(request):
+    return render(request,"profile.html")
