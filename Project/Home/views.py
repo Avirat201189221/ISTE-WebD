@@ -35,3 +35,12 @@ def facultyPage(request):
 
 def profilePage(request):
     return render(request,"profile.html")
+
+def myHerupaFirstYear(request):
+    return render(request,"myherupa-first-year.html")
+
+def myHerupaSecondYear(request):
+    return render(request,"myherupa-second-year.html")
+
+def myHerupaThirdYear(request):
+    return render(request,"myherupa-third-year.html")
