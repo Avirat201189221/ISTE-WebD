@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link href="{% static 'css\profile.css' %}" rel="stylesheet">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1></h1>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Main -->
+    <div class="main">
+        <h2>Student Profile</h2><br>
+        <img class="profileimage" src="{%static 'images\profileicon.png' %}"> 
+        <div class="card">
+            <div class="card-body">
+                <table class="profiletable">
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td>Thapar Student</td>
+                        </tr>
+                        <tr>
+                            <td>Roll No:</td>
+                            <td>:</td>
+                            <td>102110000</td>
+                        </tr>
+                        <tr>
+                            <td>Father's Name</td>
+                            <td>:</td>
+                            <td>Fname</td>
+                        </tr>
+                        <tr>
+                            <td>Mother's Name</td>
+                            <td>:</td>
+                            <td>Mname</td>
+                        </tr>
+                        <tr>
+                            <td>Date Of Birth</td>
+                            <td>:</td>
+                            <td>01-01-2000</td>
+                        </tr>
+                        <tr>
+                            <td>Contact Number</td>
+                            <td>:</td>
+                            <td>7719847835</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>inilastname_be1@thapar.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td> Insert Address Here</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+</body>
+</html>
