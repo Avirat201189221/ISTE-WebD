@@ -1,0 +1,12 @@
+.welcomeimage{
+    background: url("/static/images/ThaparWelcomeImage.jpg") center no-repeat;
+}
+.offcanvas-header{
+    background : #2D2F36;
+}
+.offcanvas-title{
+    color: aliceblue;
+}
+.offcanvas-body{
+    background: #cf171f;
+}
