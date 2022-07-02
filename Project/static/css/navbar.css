@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  background-color: #ff004c;
+  background-color: #cf171f;
   /* width: 150px; */
   min-height: 100vh;
 
@@ -40,10 +40,10 @@ body {
   width: 100%;
   transition: all 0.2s linear;
 }
-.header .nav-list .nav-item:hover .nav-link,
+/* .header .nav-list .nav-item:hover .nav-link,
 .header .nav-list .nav-item.active .nav-link {
   background-color: #1f2034;
-}
+} */
 
 .header .nav-list .nav-link {
   display: flex;
