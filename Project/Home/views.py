@@ -44,3 +44,6 @@ def myHerupaSecondYear(request):
 
 def myHerupaThirdYear(request):
     return render(request,"myherupa-third-year.html")
+
+def newsrs(request):
+    return render(request, "Webkiosk/newSRS.html")

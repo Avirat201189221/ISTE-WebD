@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="{% static 'css\navbar.css' %}" rel="stylesheet">
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
 
   </head>
   <body>
@@ -24,9 +24,28 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">LMS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Webkiosk</a>
+
+            {% comment %} --Webkiosk Dropdown-- {% endcomment %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Webkiosk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="myherupa-second-year">SRS
+                  <ul class="dropdown-menu">
+                    <li><a href="newsrs" class="dropdown-item">New SRS</a></li>
+                  </ul>
+                </a>
+                </li>
+                <li><a class="dropdown-item" href="myherupa-third-year">Fee Detail</a></li>
+                <li><a class="dropdown-item" href="myherupa-third-year">Academic Info</a></li>
+                <li><a class="dropdown-item" href="myherupa-third-year">Exam Info</a></li>
+              </ul>
             </li>
+            {% comment %} --End-- {% endcomment %}
+
+               {% comment %} --Myherupa Dropdown-- {% endcomment %}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 MyHerupa
@@ -38,9 +57,9 @@
                 <li><a class="dropdown-item" href="myherupa-third-year">Third Year</a></li>
               </ul>
             </li>
-            {% comment %} <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a> {% endcomment %}
-            </li>
+
+            {% comment %} --End-- {% endcomment %}
+
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -65,31 +84,31 @@
           <ul class="nav-list">
             <li class="nav-item">
               <a href="/" class="nav-link">
-                <i class="fas fa-home icon"></i>
+                {% comment %} <i class="fas fa-home icon"></i> {% endcomment %}
                 <span class="text">Home</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="/profile" class="nav-link">
-                <i class="fas fa-address-book icon"></i>
+                {% comment %} <i class="fas fa-address-book icon"></i> {% endcomment %}
                 <span class="text">Profile</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="https://library.thapar.edu/" class="nav-link">
-                <i class="fas fa-comments icon"></i>
+                {% comment %} <i class="fas fa-comments icon"></i> {% endcomment %}
                 <span class="text">NNCL</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="fas fa-cog icon"></i>
+                {% comment %} <i class="fas fa-cog icon"></i> {% endcomment %}
                 <span class="text">Settings</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="/logout" class="nav-link">
-                <i class="fas fa-sign-out-alt icon"></i>
+                {% comment %} <i class="fas fa-sign-out-alt icon"></i> {% endcomment %}
                 <span class="text">Sign out</span>
               </a>
             </li>
