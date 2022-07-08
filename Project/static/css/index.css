@@ -1,12 +1,19 @@
 .welcomeimage{
-    background: url("/static/images/ThaparWelcomeImage.jpg") center no-repeat;
+    background: url("static/images/ThaparWelcomeImage.jpg") center no-repeat;
 }
 .offcanvas-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
     background : #2D2F36;
 }
 .offcanvas-title{
     color: aliceblue;
 }
 .offcanvas-body{
+    flex-grow: 1;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    overflow-y: auto;
     background: #cf171f;
 }

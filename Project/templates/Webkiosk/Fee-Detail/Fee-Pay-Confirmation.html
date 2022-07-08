@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/Webkiosk/Fee-Detail/Fee-Pay-Confirmation.css' %}" rel="stylesheet" media="all" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body id="hel">
+    <div class="row" id="row_1_border">
+        <div class="col-1">
+            <button type="button" id="btn">
+                <p id="arrow">&#8592;</p>
+            </button>
+        </div>
+        <div class="col-11">
+            <p id="feepay" align="center"><b>Fee pay Confirmation</b></p>
+        </div>
+    </div>
+
+    <div class="row" id="row2">
+        <div class=" col-md-6 col-xl-6 col-sm-12 col-12">
+            <p>Enrollment Number:</p>
+        </div>
+        <div class=" col-md-6 col-xl-6 col-sm-12 col-12">
+            <p>Academic Year:</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="row" id="row_2_border">
+        <div class="col-12">
+            <form action="/action_page.php" method="get">
+
+                <label for="bankname" class="pad"><b>Choose Bank:</b></label>
+                <input type="text" id="bankname" name="bankname" class="box">
+                <label for="jno" class="padding"><b>Journal No. :</b></label>
+                <input type="text" id="jno" name="jno" class="box">
+
+                <label for="rcode" class="padding"><b>Registeration Code :</b></label>
+                <input type="text" id="rcode" name="rcode" class="box">
+
+                <label for="dateo" class="padding"><b>Date of Deposit :</b></label>
+                <input type="text" id="dateo" name="dateo" class="box">
+                <label for="pamount" class="padding"><b>Paid Amount :</b></label>
+                <input type="text" id="pamount" name="pamount" class="box">
+                <label class="but"></label><input type="submit" value="Display/Refresh" id="disp_button" class="box1">
+            </form>
+
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr class="heading" id="headrow">
+                <th scope="col" class="headcell">Sr No.</th>
+                <th scope="col" class="headcell">Reg Code</th>
+                <th scope="col" class="headcell">Bank Name</th>
+                <th scope="col" class="headcell">Date of Deposit</th>
+                <th scope="col" class="headcell">Journal No.</th>
+                <th scope="col" class="headcell">Paid Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="heading">
+                <th scope="row" class="heading">1</th>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+            </tr>
+            <tr class="heading">
+                <th scope="row" class="heading">2</th>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+            </tr>
+            <tr class="heading">
+                <th scope="row" class="heading">3</th>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+                <td class="heading"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- HEADING
+    <table class="first" border="3" bgcolor="#8AC9CD">
+        <tr>
+        <td class="row0"><p align="left">&#8592;</p></td>
+    <td class="row1"><center><b><font face="arial" size="6" color="black">Fee Pay Confirmation</font></b></center></td>
+    </tr></table>
+    <table class="second" border="2" bgcolor="#71A4DD">
+        <tr>
+        <td class="row2"><font face="arial" size="2" color="black"><b>Enrollment Number:</b></font></td>
+    <td class="row3"><font face="arial" size="2" color="black"><b>Academic Year:</b></font></td>
+    </tr></table> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

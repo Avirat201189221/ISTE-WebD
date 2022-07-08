@@ -12,4 +12,6 @@ urlpatterns = [
     path('myherupa-second-year',views.myHerupaSecondYear,name='myherupasecondyear'),
     path('myherupa-third-year',views.myHerupaThirdYear,name='myherupathirdyear'),
     path('newsrs',views.newsrs,name='newsrs'),
+    path('srsdisplay',views.srsdisplay,name='srsdisplay'),
+    path('fee-pay-confirmation',views.feepayconfirmation,name='feepayconfirmation'),
 ]
