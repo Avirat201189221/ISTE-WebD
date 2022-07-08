@@ -46,4 +46,10 @@ def myHerupaThirdYear(request):
     return render(request,"myherupa-third-year.html")
 
 def newsrs(request):
-    return render(request, "Webkiosk/newSRS.html")
+    return render(request, "Webkiosk/SRS/newSRS.html")
+
+def srsdisplay(request):
+    return render(request,"Webkiosk/SRS/SRSdisplay.html")
+
+def feepayconfirmation(request):
+    return render(request,"Webkiosk/Fee-Detail/Fee-Pay-Confirmation.html")

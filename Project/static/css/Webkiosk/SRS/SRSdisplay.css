@@ -1,0 +1,64 @@
+.header-rectangle{
+    background: #71a4dd;
+    height: 19%;
+    width:100%;
+}
+img{
+    display: inline;
+    height:75px;
+    margin: 20px 0px 20px 20px;
+}
+.rect-text{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10.7%;
+    color:#000000;
+    font-size: 20px;
+}
+.rect-text-2{
+    margin: 0px 30% 0px 8%;
+    font-size: 20px;
+}
+.rect-text-3{
+    margin: 0px 0px 0px 20%;
+    font-size: 20px;
+}
+.srs-dropdown-text{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 25%;
+    color:#000000;
+}
+.SRS-Entry{
+    width: 50%;
+    margin: 0px 2% 0px 0px;
+}
+.black-rectangle{
+    background: #000000;
+    height:5%;
+    width: 100%;
+}
+.fa-fa-arrow-left{
+    background: #ffffff;
+}
+.srs-header-text{
+    margin: 0px 37%;
+    color: #ffffff;
+}
+.turquoise-rectangle{
+    background: turquoise;
+    height:1250px;
+    width:100%;
+}
+h3{
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+.srs-table{
+    width:80%;
+    margin: 0px 0px 0px 10%;
+    padding: 0px 0px 0px 0px;
+}
+.table-dark{
+    margin: 0px 0px 0px 0px;
+    border-style: white;
+    border-width: 2px;
+}
